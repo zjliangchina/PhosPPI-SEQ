@@ -23,5 +23,8 @@ PhosPPI-SEQ is develpoed under Linux environment with:
 We provide phosphosite data, collected from four databases - PSP, PTMint, iPTMnet and PTMD - detailing information on phosphosites and their regulation of molecular functions, biological processes, and intermolecular interactions, as well as their associations with disease information.
 
 # Predict test data
-If you want to use this model to predict the function of phosphorylation sites in regulating Protein-Protein Interactions (PPI), please run the following command (The test data required for running can be found in the "Datasets/example" folder; you can also provide your own data, but the data format needs to be the same as that of the test data):
-- python ./src/model/PhosPPI_SEQ.py
+If you want to use this model to predict the function of phosphosites in regulating Protein-Protein Interactions (PPI), please run the following command (The test data required for running can be found in the "Datasets/ST" or "Datasets/Y" folder; you can also provide your own data, but the data format needs to be the same as that of the test data):
+- python ./src/model/PhosPPI_SEQ_Y.py  # Prediction of the function of tyrosine phosphosites in regulating PPI
+- python ./src/model/PhosPPI_SEQ_ST.py  # Prediction of the function of serine/threonine phosphosites in regulating PPI
+- python ./src/model/PhosPPI_SEQ_Y_effect.py  # Prediction of the regulatory influence of tyrosine phosphosites that regulate PPI
+- python ./src/model/PhosPPI_SEQ_ST_effect.py  # Prediction of the regulatory influence of serine/threonine phosphosites that regulate PPI
