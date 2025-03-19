@@ -22,6 +22,6 @@ PhosPPI-SEQ is develpoed under Linux environment with:
 # Dataset
 We provide phosphosite data, collected from four databases - PSP, PTMint, iPTMnet and PTMD - detailing information on phosphosites and their regulation of molecular functions, biological processes, and intermolecular interactions, as well as their associations with disease information.
 
-# predict test data
+# Predict test data
 If you want to use this model to predict the function of phosphorylation sites in regulating Protein-Protein Interactions (PPI), please run the following command (The test data required for running can be found in the "Datasets/example" folder; you can also provide your own data, but the data format needs to be the same as that of the test data):
 - python ./src/model/PhosPPI_SEQ.py
